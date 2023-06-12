@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>OKC Landing Page</title>
+<meta name="author" content="tansh">
+<meta name="description" content="HTML Teamplate">
+<meta name="keywords" content="health, donation">
+
+<!-- FAVICON FILES -->
+<link href="assets/images/icons/logo.ico" rel="shortcut icon">
+
+<!-- CSS FILES -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/fonts/iconfonts.css">
+<link rel="stylesheet" href="assets/css/plugins.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/color-blue.css">
+</head>
+<body>
+<div id="dtr-wrapper" class="clearfix"> 
+    
+    <!-- preloader starts -->
+    <div class="dtr-preloader">
+        <div class="dtr-preloader-inner">
+            <div class="dtr-preloader-img"></div>
+        </div>
+    </div>
+    <!-- preloader ends --> 
+    
+    <!-- Small Devices Header 
+============================================= -->
+    <div class="dtr-responsive-header fixed-top">
+        <div class="container"> 
+            
+            <!-- small devices logo --> 
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a> 
+            <!-- small devices logo ends --> 
+            
+            <!-- menu button -->
+            <button id="dtr-menu-button" class="dtr-hamburger" type="button"><span class="dtr-hamburger-lines-wrapper"><span class="dtr-hamburger-lines"></span></span></button>
+        </div>
+        <div class="dtr-responsive-header-menu"></div>
+    </div>
+    <!-- Small Devices Header ends 
+============================================= --> 
+    
+    <!-- Header 
+============================================= -->
+    <header id="dtr-header-global" class="fixed-top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between"> 
+                
+                <!-- header left starts -->
+                <div class="dtr-header-left"> 
+                    
+                    <!-- logo --> 
+                    <a class="logo-default dtr-scroll-link" href="#home"><img src="assets/images/okclogowebalt.png"  alt="logo"></a> 
+                    
+                    <!-- logo on scroll --> 
+                    <a class="logo-alt dtr-scroll-link" href="#home"><img src="assets/images/okclogoweb.png" alt="logo"></a> 
+                    <!-- logo on scroll ends --> 
+                    
+                </div>
+                <!-- header left ends --> 
+                
+                <!-- menu starts-->
+                <div class="main-navigation navbar navbar-expand-lg ml-auto">
+                    <ul class="dtr-scrollspy navbar-nav dtr-nav light-nav-on-load dark-nav-on-scroll">
+                        <li class="nav-item"> <a class="nav-link active" href="#home">Inicio</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#features">Corporativo</a> </li>
+                    </ul>
+                </div>
+                <!-- menu ends--> 
+                
+                <!-- header right starts -->
+                <div class="dtr-header-right"> <a href="#donation" class="dtr-btn btn-rounded btn-orange dtr-scroll-link">Ecommerce</a> </div>
+                <!-- header right ends --> 
+                
+            </div>
+        </div>
+    </header>
+    <!-- header ends
+================================================== --> 
+    
+    <!-- == main content area starts == -->
+    <div id="dtr-main-content"> 
+        
+        <!-- hero section starts
+================================================== -->
+        <section id="home" class="dtr-section hero-section-top-padding dtr-section-with-bg dtr-pb-100" style="background-image: url( assets/images/fondoweb.jpg);">
+            <div class="container"> 
+                
+                <!-- row starts -->
+                <div class="row"> 
+                    
+                    <!-- column 1 starts -->
+                    <div class="col-12 col-md-6 offset-md-6">
+                        <div class="dtr-box dtr-rounded bg-white">
+                            <h2 class="text-center">OK Beneficios</h2>
+                            <p class="text-center text-grad-orange font-weight-700">El programa corporativo que permite brindar a tus colaboradores o clientes beneficios exclusivos en nuestros productos.
+</p>
+                            
+                            <!-- form starts -->
+                            <div class="dtr-form">
+                                <form id="contactform" method="post" action="php/contact-form.php">
+                                    <fieldset>
+                                        <div class="dtr-form-row dtr-form-row-2col">
+                                            <p class="dtr-form-column">
+                                                <input name="name"  type="text" placeholder="Nombres y Apellidos">
+                                            </p>
+                                            <p class="dtr-form-column">
+                                                <input name="phone"  type="text" placeholder="Teléfono">
+                                            </p>
+                                        </div>
+                                        <p>
+                                            <input name="email"  class="required email" type="text" placeholder="Correo corporativo">
+                                        </p>
+                                        <p class="antispam">Leave this empty: <br />
+                                            <input name="url" />
+                                        </p>
+										
+										<div class="dtr-form-row dtr-form-row-2col">
+                                            <p class="dtr-form-column">
+                                                <input name="name"  type="text" placeholder="Empresa">
+                                            </p>
+                                            <p class="dtr-form-column">
+                                                <input name="name"  type="text" placeholder="Cargo">
+                                            </p>
+                                        </div>
+										
+                                        <p>
+                                            <textarea rows="6" name="message" id="message" class="required"  placeholder="Mensaje"></textarea>
+                                        </p>
+                                        <p class="text-center">
+                                            <button class="dtr-btn btn-rounded btn-blue" type="submit">Enviar</button>
+                                        </p>
+                                        <div id="result"></div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- form ends -->
+                            <p class="text-size-xs font-weight-600 text-center dtr-mt-20">*No compartiremos tu información.</p>
+                        </div>
+                    </div>
+                    <!-- column 1 ends --> 
+                    
+                </div>
+                <!-- row ends --> 
+                
+            </div>
+        </section>
+        <!-- hero section ends
+================================================== --> 
+        
+ <!-- services section starts
+================================================== -->
+        <section class="dtr-section dtr-section-with-bg dtr-py-100 parallax" style="background-image: url(assets/images/section-bg2.jpg);"> 
+            
+            <!-- overlay -->
+            <div class="dtr-overlay bg-blue-trans"></div>
+            <div class="container dtr-overlay-content">
+                <h2 class="text-center dtr-mb-40 color-white">¡Ventajas de OK Beneficios!
+</h2>
+                
+                <!-- row starts -->
+                <div class="row"> 
+                    
+                    <!-- column 1 starts -->
+                    <div class="col-12 col-md-4"> 
+                        
+                        <!-- icon box 1 starts -->
+                        <div class="dtr-icon-box dtr-icon-box-rounded box-has-hover">
+                            <div class="dtr-icon-box-icon bg-white color-orange"> <i class="icon-dollar-sign"></i> </div>
+                            <div class="dtr-icon-box-content">
+                                <h4 class="font-weight-800 color-white">Precios exclusivos con grandes descuentos</h4>
+                                
+                            </div>
+                             </div>
+                        <!-- icon box 1 ends --> 
+                        
+                    </div>
+                    <!-- column 1 ends --> 
+                    
+                    <!-- column 2 starts -->
+                    <div class="col-12 col-md-4 dtr-md-mt-30"> 
+                        
+                        <!-- icon box 2 starts -->
+                        <div class="dtr-icon-box dtr-icon-box-rounded box-has-hover">
+                            <div class="dtr-icon-box-icon bg-white color-orange"> <i class="icon-truck"></i> </div>
+                            <div class="dtr-icon-box-content">
+                                <h4 class="font-weight-800 color-white">Delivery gratis sujeto a nuestra cobertura
+
+</h4>
+                               
+                            </div>
+                             </div>
+                        <!-- icon box 2 ends --> 
+                        
+                    </div>
+                    <!-- column 2 ends --> 
+                    
+                    <!-- column 3 starts -->
+                    <div class="col-12 col-md-4 dtr-md-mt-30"> 
+                        
+                        <!-- icon box 3 starts -->
+                        <div class="dtr-icon-box dtr-icon-box-rounded box-has-hover">
+                            <div class="dtr-icon-box-icon bg-white color-orange"> <i class="icon-tags"></i> </div>
+                            <div class="dtr-icon-box-content">
+                                <h4 class="font-weight-800 color-white">Ofertas y promociones preferentes</h4>
+                               
+                            </div>
+                             </div>
+                        <!-- icon box 3 ends --> 
+                        
+                    </div>
+                    <!-- column 3 ends --> 
+                    
+                </div>
+                <!-- row ends --> 
+                
+            </div>
+        </section>
+        <!-- services section ends
+================================================== -->         
+        
+        <!-- section starts
+================================================== -->
+        <section class="dtr-section dtr-py-100">
+            <div class="container"> 
+               
+                
+                <!-- row 1 starts -->
+                <div class="row align-items-center"> 
+                    
+                    <!-- column 1 starts -->
+                    <div class="col-12 col-md-6 dtr-md-mb-30"> <img src="assets/images/signin.png" alt="image"> </div>
+                    <!-- column 1 ends --> 
+                    
+                    <!-- column 2 starts -->
+                    <div class="col-12 col-md-6">
+                        <div class="clearfix dtr-mb-30"> <img src="assets/images/1-64x64.png" alt="image" class="float-left dtr-mr-10">
+                            <p class="text-size-lg font-weight-200 color-blue"><span class="font-weight-600 color-orange">Inscribe tu empresa sin costo alguno</p>
+								</span>
+                        </div>
+                        
+                    </div>
+                    <!-- column 2 ends --> 
+                    
+                </div>
+                <!-- row 1 ends --> 
+                
+                <!-- row 2 starts -->
+                <div class="row align-items-center dtr-py-100"> 
+                    
+                    <!-- column 1 starts -->
+                    <div class="col-12 col-md-6">
+                        <div class="clearfix dtr-mb-30"> <img src="assets/images/2-64x64.png" alt="image" class="float-left dtr-mr-10">
+                            <p class="text-size-lg font-weight-200 color-blue"><span class="font-weight-600 color-orange">Integra el programa a tu estrategia de beneficios y fidelización</p>
+                        </div>
+                        
+                    </div>
+                    <!-- column 1 ends --> 
+                    
+                    <!-- column 2 starts -->
+                    <div class="col-12 col-md-6 text-right dtr-md-mt-30"> <img src="assets/images/contract.png" alt="image"> </div>
+                    <!-- column 2 ends --> 
+                    
+                </div>
+                <!-- row 2 ends --> 
+                
+                <!-- row 3 starts -->
+                <div class="row align-items-center"> 
+                    
+                    <!-- column 1 starts -->
+                    <div class="col-12 col-md-6 dtr-md-mb-30"> <img src="assets/images/happy.png" alt="image"> </div>
+                    <!-- column 1 ends --> 
+                    
+                    <!-- column 2 starts -->
+                    <div class="col-12 col-md-6">
+                        <div class="clearfix dtr-mb-30"> <img src="assets/images/3-64x64.png" alt="image" class="float-left dtr-mr-10">
+                            <p class="text-size-lg font-weight-200 color-blue"><span class="font-weight-600 color-orange">Tus colaboradores o clientes acceden directamente  a un mundo de beneficios</p>
+                        </div>
+                        
+                    </div>
+                    <!-- column 2 ends --> 
+                    
+                </div>
+                <!-- row 3 ends --> 
+                
+            </div>
+        </section>
+        <!-- section ends
+================================================== --> 
+        
+      
+        
+        
+        
+     
+                        
+                    </div>
+                    <!-- column 1 ends --> 
+                    
+                    
+                        
+                    </div>
+                    <!-- column 2 ends --> 
+                    
+                </div>
+                <!-- row ends --> 
+                
+            </div>
+        </section>
+        <!-- testimonial section ends
+================================================== --> 
+        
+       
+        
+       
+        
+        
+        
+       
+        
+      
+        
+        <!-- footer section starts
+================================================== -->
+        <footer id="dtr-footer">
+            <div class="container">
+                <div class="row"> 
+                    
+                    <!-- column 1 starts -->
+                    <div class="col-12 col-sm-6 col-lg-2 dtr-mb-30"> <a href="index.html" class="d-block dtr-mb-30"><img src="assets/images/okclogowebalt.png" alt="footer logo"></a>
+                        <div class="dtr-social-large">
+                            <ul class="dtr-social dtr-social-list social-light text-left">
+                                <li><a href="https://www.instagram.com/okcomputerperu" class="dtr-instagram color-grey" target="_blank" title="twitter"></a></li>
+                                <li><a href="https://www.facebook.com/OKComputerPeru" class="dtr-facebook color-grey " target="_blank" title="facebook"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- column 1 ends --> 
+                    
+                    <!-- column 2 starts -->
+                    <div class="col-12 col-sm-6 col-lg-4 dtr-mb-30">
+                        
+                    </div>
+                    <!-- column 2 ends --> 
+                    
+                    <!-- column 3 starts -->
+                    <div class="col-12 col-sm-6 col-lg-3 dtr-mb-30">
+                        
+                    </div>
+                    <!-- column 3 ends --> 
+                    
+                    <!-- column 4 starts -->
+                  <div class="col-12 col-sm-6 col-lg-3 dtr-mb-30">
+                        <h6>Contacto</h6>
+                        <p class="d-flex dtr-mb-20"><i class="icon-envelope1 dtr-mt-5 dtr-mr-15"></i><span><a href="mailto:contacto@okcomputer.com.pe">contacto@okcomputer.com.pe</a></span></p>
+                    <p class="d-flex dtr-mb-20"><i class="icon-phone-alt dtr-mt-5 dtr-mr-15"></i><span>+1 234 567 8900</span></p>
+                       
+                    </div>
+                    <!-- column 4 ends --> 
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- footer section ends
+================================================== --> 
+        
+    </div>
+    <!-- == main content area ends == --> 
+    
+</div>
+<!-- #dtr-wrapper ends --> 
+
+<!-- JS FILES --> 
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/plugins.js"></script> 
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
